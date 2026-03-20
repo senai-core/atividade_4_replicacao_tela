@@ -147,10 +147,17 @@ select {
     padding: 8px 2px 10px;
     font-size: 14px;
     color: #3d3d3d;
+    border-bottom: 3px solid transparent;
 }
 
 .tab.active {
     font-weight: bold;
+    border-bottom-color: #2c99b7;
+}
+
+.tab:hover {
+    color: #0f6f97;
+    border-bottom-color: #2c99b7;
 }
 
 .sidebar-header {
@@ -197,6 +204,11 @@ select {
 .nav-table td[contenteditable="true"],
 .main-grid td[contenteditable="true"] {
     cursor: text;
+}
+
+.nav-table tbody tr:hover td,
+.main-grid tbody tr:hover td {
+    background: #c6e7f6;
 }
 
 .nav-table td[contenteditable="true"]:focus,

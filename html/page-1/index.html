@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wohl Superbikes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="tela_1.css">
+</head>
+<body>
+    <div class="page">
+        <header class="top-title">
+            <div class="sap-logo">Wohl
+            </div>
+            <div class="title-text">
+                Superbikes Garage - Main Page
+            </div>
+        </header>
+
+        <div class="main-toolbar">
+            <button type="button">Save</button>
+            <button type="button">Back</button>
+            <button type="button" class="disabled">Edit</button>
+            <button type="button" class="disabled">Save Notes</button>
+            <button type="button" class="disabled">Load Bikes</button>
+            <button type="button" class="disabled">Undo</button>
+            <button type="button" class="disabled">Redo</button>
+            <button type="button">Review</button>
+            <button type="button" class="icon-button"><i class="bi bi-layout-three-columns"></i></button>
+            <button type="button" class="icon-button"><i class="bi bi-columns-gap"></i></button>
+            <button type="button" class="icon-button"><i class="bi bi-grid-3x3-gap"></i></button>
+            <button type="button">More Bikes</button>
+        </div>
+
+        <div class="workspace">
+            <aside class="sidebar panel">
+                <div class="panel-header sidebar-header">
+                    <h2>Garage Menu</h2>
+                    <div class="sidebar-tabs">
+                        <span class="tab active">Bikes</span>
+                        <span class="tab">Parts</span>
+                    </div>
+                </div>
+
+                <div class="mini-toolbar">
+                    <button type="button">Add</button>
+                    <button type="button" class="icon-button"><i class="fa-regular fa-trash-can"></i></button>
+                    <button type="button" class="icon-button"><i class="fa-regular fa-copy"></i></button>
+                    <button type="button" class="disabled">Up</button>
+                    <button type="button">Next</button>
+                    <button type="button" class="icon-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
+                <table class="nav-table">
+                    <thead>
+                        <tr>
+                            <th>Bike Type</th>
+                            <th>Bike ID</th>
+                            <th>Bike Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td contenteditable="true">Superbike</td>
+                            <td contenteditable="true">WB01</td>
+                            <td contenteditable="true">BMW S1000RR</td>
+                        </tr>
+                        <tr class="selected">
+                            <td contenteditable="true">Superbike</td>
+                            <td contenteditable="true">WB02</td>
+                            <td contenteditable="true">Ducati Panigale V4</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Superbike</td>
+                            <td contenteditable="true">WB03</td>
+                            <td contenteditable="true">Yamaha R1</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Superbike</td>
+                            <td contenteditable="true">WB04</td>
+                            <td contenteditable="true">Honda CBR1000RR-R</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Hyperbike</td>
+                            <td contenteditable="true">WB05</td>
+                            <td contenteditable="true">Kawasaki Ninja H2</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Sport Bike</td>
+                            <td contenteditable="true">WB06</td>
+                            <td contenteditable="true">Suzuki GSX-R1000</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Track Bike</td>
+                            <td contenteditable="true">WB07</td>
+                            <td contenteditable="true">Aprilia RSV4</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Street Bike</td>
+                            <td contenteditable="true">WB08</td>
+                            <td contenteditable="true">MV Agusta F3</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Superbike</td>
+                            <td contenteditable="true">WB09</td>
+                            <td contenteditable="true">ZX-10R</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Collector</td>
+                            <td contenteditable="true">WB10</td>
+                            <td contenteditable="true">Hayabusa</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Race Bike</td>
+                            <td contenteditable="true">WB11</td>
+                            <td contenteditable="true">RC8 R</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </aside>
+
+            <main class="content panel">
+                <div class="panel-header content-header">
+                    <div class="schema-tabs">
+                        <span class="tab active">Bike Overview</span>
+                        <span class="tab">Garage Tools</span>
+                        <span class="tab">Track Notes</span>
+                    </div>
+                    <span class="header-icon"><i class="bi bi-arrows-fullscreen"></i></span>
+                </div>
+
+                <div class="mini-toolbar content-toolbar">
+                    <button type="button">Main Garage</button>
+                    <button type="button">Bike Group</button>
+                    <button type="button">Bike Card</button>
+                    <button type="button" class="icon-button"><i class="fa-regular fa-trash-can"></i></button>
+                    <button type="button">Up</button>
+                    <button type="button">Next</button>
+                </div>
+
+                <div class="grid-wrap">
+                    <table class="main-grid">
+                        <thead>
+                            <tr>
+                                <th>Bike</th>
+                                <th>Category</th>
+                                <th>Garage Code</th>
+                                <th>View</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td contenteditable="true">Group: Track Favorites</td>
+                                <td contenteditable="true">Priority</td>
+                                <td contenteditable="true">WOHL-01</td>
+                                <td contenteditable="true">Garage View</td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">BMW S1000RR</td>
+                                <td contenteditable="true">German Superbike</td>
+                                <td contenteditable="true">WOHL-BMW-1000</td>
+                                <td contenteditable="true">Main View</td>
+                            </tr>
+                            <tr class="selected">
+                                <td contenteditable="true">Ducati Panigale V4</td>
+                                <td contenteditable="true">Italian Superbike</td>
+                                <td contenteditable="true">WOHL-DUCATI-V4</td>
+                                <td contenteditable="true">Main View</td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">Yamaha R1</td>
+                                <td contenteditable="true">Track Weapon</td>
+                                <td contenteditable="true">WOHL-R1-998</td>
+                                <td contenteditable="true">Tab View</td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">Kawasaki Ninja H2</td>
+                                <td contenteditable="true">Hyperbike</td>
+                                <td contenteditable="true">WOHL-H2-BOOST</td>
+                                <td contenteditable="true">Tree View</td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">Aprilia RSV4</td>
+                                <td contenteditable="true">Race Machine</td>
+                                <td contenteditable="true">WOHL-RSV4-TRACK</td>
+                                <td contenteditable="true">Tab View</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <section class="details">
+                    <div class="details-title">
+                        Wohl Bike Details
+                        <button type="button" class="flag-button">Track Flags</button>
+                    </div>
+
+                    <div class="details-body">
+                        <div class="form-column">
+                            <label>Garage Name:</label>
+                            <input type="text" value="S1000RR GARAGE">
+
+                            <label>Bike Folder:</label>
+                            <div class="input-with-icon">
+                                <input type="text" value="/SUPERBIKES/BMW/S1000RR">
+                                <span><i class="bi bi-box-arrow-up-right"></i></span>
+                            </div>
+
+                            <label>Favorite Bike:</label>
+                            <input type="text" value="Panigale V4">
+
+                            <label>Engine CC:</label>
+                            <input type="text" value="1000">
+
+                            <label>Main Choice:</label>
+                            <select class="wide-select">
+                                <option>Yamaha R1</option>
+                                <option selected>Ducati Panigale V4</option>
+                                <option>Kawasaki Ninja H2</option>
+                            </select>
+
+                            <label>Extra Bike:</label>
+                            <input type="text" value="CBR600RR">
+
+                            <label>Main Model:</label>
+                            <select>
+                                <option>GSX-R1000</option>
+                            </select>
+
+                            <label>Backup Model:</label>
+                            <select>
+                                <option>ZX-10R</option>
+                            </select>
+                        </div>
+
+                        <div class="form-column">
+                            <label>Dream Bike:</label>
+                            <input type="text" value="Aprilia RSV4 Factory">
+
+                            <label>Favorite Part:</label>
+                            <input type="text" value="Carbon fairing">
+
+                            <label>Garage Setup:</label>
+                            <select>
+                                <option>Track setup</option>
+                            </select>
+
+                            <label>Riding Style:</label>
+                            <input type="text" value="Race style">
+
+                            <label>Project Name:</label>
+                            <input type="text" value="Top speed project">
+
+                            <label>Garage Notes:</label>
+                            <input type="text" value="Moto notes 2026">
+
+                            <label>Special Build:</label>
+                            <div class="input-with-icon">
+                                <input type="text" value="Hayabusa special">
+                                <span><i class="bi bi-box-arrow-up-right"></i></span>
+                            </div>
+
+                            <label>Detail Page:</label>
+                            <input type="text" value="Racing details page">
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
