@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="tela">
+    <div class="bloco">
+      <div class="caixa-topo">
+        <div class="lado-esq">
+          <img src="assets/pngwing.com.png" alt="Robo" class="img-robo">
+          <div class="textos-topo">
+            <h2 class="ola">Olá, tudo bem?</h2>
+            <h1 class="pergunta">Como posso ajudar hoje?</h1>
+            <button class="botao-azul">Fale comigo!</button>
+          </div>
+        </div>
+        <div class="lado-dir">
+          <button class="botao-arredondado">
+            <span>QUERO COMPRAR MATERIAL</span>
+            <span class="mais">+</span>
+          </button>
+          <button class="botao-arredondado">
+            <span>QUERO COMPRAR SERVIÇO</span>
+            <span class="mais">+</span>
+          </button>
+          <button class="botao-arredondado">
+            <span>CONSULTAR FLUXO DE PROCESSOS</span>
+            <span class="mais">+</span>
+          </button>
+          <button class="botao-arredondado">
+            <span>STATUS DAS MINHAS REQUISIÇÕES</span>
+            <span class="mais">+</span>
+          </button>
+          <button class="botao-arredondado">
+            <span>NÃO SEI AO CERTO, ME AJUDE</span>
+            <span class="mais">+</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="quadro quadro-pedidos">
+        <div class="titulo-quadro">
+          <h3>Status de Pedidos Recentes</h3>
+          <a href="#" class="link">Ver todos pedidos <span class="mais">+</span></a>
+        </div>
+        <div class="dentro-quadro">
+          <table class="tabela-pedidos">
+            <thead>
+              <tr>
+                <th>Nº Req.</th>
+                <th>Data</th>
+                <th>Valor</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="doc">📄</span> #125</td>
+                <td>20/04/2020</td>
+                <td>R$ 1250,50</td>
+                <td><span class="tag tag-verde">Processado</span></td>
+              </tr>
+              <tr>
+                <td><span class="doc">📄</span> #126</td>
+                <td>21/04/2020</td>
+                <td>R$ 890,00</td>
+                <td><span class="tag tag-amarelo">Atenção</span></td>
+              </tr>
+              <tr>
+                <td><span class="doc">📄</span> #127</td>
+                <td>22/04/2020</td>
+                <td>R$ 2100,00</td>
+                <td><span class="tag tag-vermelho">Cancelado</span></td>
+              </tr>
+              <tr>
+                <td><span class="doc">📄</span> #128</td>
+                <td>23/04/2020</td>
+                <td>R$ 540,75</td>
+                <td><span class="tag tag-verde">Processado</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="bloco">
+      <div class="quadro quadro-produtos">
+        <div class="titulo-quadro">
+          <h3>Baseado em suas últimas compras</h3>
+          <a href="#" class="link">Ver todas as recomendações <span class="mais">+</span></a>
+        </div>
+        <div class="dentro-quadro">
+          <div class="carrossel">
+            <button class="seta esq">❮</button>
+            <div class="lista-produtos">
+              <div class="produto">
+                <div class="img-produto cor-1"></div>
+                <span class="nome-produto">Papel sulfite (Chamex)</span>
+                <span class="preco">R$ 24,90</span>
+              </div>
+              <div class="produto">
+                <div class="img-produto cor-2"></div>
+                <span class="nome-produto">SAP</span>
+                <span class="preco">R$ 150,00</span>
+              </div>
+              <div class="produto">
+                <div class="img-produto cor-3"></div>
+                <span class="nome-produto">Grampeador</span>
+                <span class="preco">R$ 18,90</span>
+              </div>
+              <div class="produto">
+                <div class="img-produto cor-4"></div>
+                <span class="nome-produto">Caneta azul</span>
+                <span class="preco">R$ 2,50</span>
+              </div>
+              <div class="produto">
+                <div class="img-produto cor-5"></div>
+                <span class="nome-produto">Lápis preto</span>
+                <span class="preco">R$ 1,80</span>
+              </div>
+            </div>
+            <button class="seta dir">❯</button>
+          </div>
+          <div class="bolinhas">
+            <span class="bolinha active"></span>
+            <span class="bolinha"></span>
+            <span class="bolinha"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="quadro quadro-msgs">
+        <div class="titulo-quadro">
+          <h3>Mensagens e Alertas</h3>
+          <a href="#" class="link">Ver todas mensagens <span class="mais">+</span></a>
+        </div>
+        <div class="dentro-quadro">
+          <div class="lista-msgs">
+            <div class="msg">
+              <div class="avatar">JS</div>
+              <div class="corpo-msg">
+                <div class="topo-msg">
+                  <span class="nome">João da Silva</span>
+                  <span class="hora">Hoje</span>
+                </div>
+                <p class="texto">Alerta de pagamento pendente...</p>
+              </div>
+            </div>
+            <div class="msg">
+              <div class="avatar">MJ</div>
+              <div class="corpo-msg">
+                <div class="topo-msg">
+                  <span class="nome">Márcio José</span>
+                  <span class="hora">Abr 5</span>
+                </div>
+                <p class="texto">Fornecedor solicitou conf...</p>
+              </div>
+            </div>
+            <div class="msg">
+              <div class="avatar">AR</div>
+              <div class="corpo-msg">
+                <div class="topo-msg">
+                  <span class="nome">Ana Rodrigues</span>
+                  <span class="hora">Abr 3</span>
+                </div>
+                <p class="texto">Confirmação de entrega a...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bloco">
+      <div class="quadro quadro-status">
+        <div class="titulo-quadro">
+          <h3>Status das Últimas Requisições</h3>
+          <a href="#" class="link">Ver todos processos <span class="mais">+</span></a>
+        </div>
+        <div class="dentro-quadro">
+          <div class="lista-status">
+            <div class="item-status">
+              <div class="info-pedido">
+                <span class="label">Nº Pedido</span>
+                <span class="num">12345</span>
+              </div>
+              <div class="passos">
+                <div class="passo feito">
+                  <div class="circulo">1</div>
+                  <span class="nome-pass"> Requisição</span>
+                </div>
+                <div class="linha feito"></div>
+                <div class="passo feito">
+                  <div class="circulo">2</div>
+                  <span class="nome-pass">Vendedor</span>
+                </div>
+                <div class="linha feito"></div>
+                <div class="passo feito">
+                  <div class="circulo">3</div>
+                  <span class="nome-pass">Cotação</span>
+                </div>
+                <div class="linha"></div>
+                <div class="passo agora">
+                  <div class="circulo">4</div>
+                  <span class="nome-pass">PO/GR</span>
+                </div>
+                <div class="linha"></div>
+                <div class="passo">
+                  <div class="circulo">5</div>
+                  <span class="nome-pass">Processado</span>
+                </div>
+              </div>
+            </div>
+            <div class="item-status">
+              <div class="info-pedido">
+                <span class="label">Nº Pedido</span>
+                <span class="num">12346</span>
+              </div>
+              <div class="passos">
+                <div class="passo feito">
+                  <div class="circulo">1</div>
+                  <span class="nome-pass"> Requisição</span>
+                </div>
+                <div class="linha feito"></div>
+                <div class="passo feito">
+                  <div class="circulo">2</div>
+                  <span class="nome-pass">Vendedor</span>
+                </div>
+                <div class="linha"></div>
+                <div class="passo agora">
+                  <div class="circulo">3</div>
+                  <span class="nome-pass">Cotação</span>
+                </div>
+                <div class="linha"></div>
+                <div class="passo">
+                  <div class="circulo">4</div>
+                  <span class="nome-pass">PO/GR</span>
+                </div>
+                <div class="linha"></div>
+                <div class="passo">
+                  <div class="circulo">5</div>
+                  <span class="nome-pass">Processado</span>
+                </div>
+              </div>
+            </div>
+            <div class="item-status">
+              <div class="info-pedido">
+                <span class="label">Nº Pedido</span>
+                <span class="num">12347</span>
+              </div>
+              <div class="passos">
+                <div class="passo feito">
+                  <div class="circulo">1</div>
+                  <span class="nome-pass"> Requisição</span>
+                </div>
+                <div class="linha feito"></div>
+                <div class="passo agora">
+                  <div class="circulo">2</div>
+                  <span class="nome-pass">Vendedor</span>
+                </div>
+                <div class="linha"></div>
+                <div class="passo">
+                  <div class="circulo">3</div>
+                  <span class="nome-pass">Cotação</span>
+                </div>
+                <div class="linha"></div>
+                <div class="passo">
+                  <div class="circulo">4</div>
+                  <span class="nome-pass">PO/GR</span>
+                </div>
+                <div class="linha"></div>
+                <div class="passo">
+                  <div class="circulo">5</div>
+                  <span class="nome-pass">Processado</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quadro quadro-compras">
+        <div class="titulo-quadro">
+          <h3>Últimas Transações e Pedidos</h3>
+          <a href="#" class="link">Ver todas transações <span class="mais">+</span></a>
+        </div>
+        <div class="dentro-quadro">
+          <div class="carrossel">
+            <button class="seta esq">❮</button>
+            <div class="lista-produtos">
+              <div class="compra">
+                <div class="img-produto cor-1"></div>
+                <span class="nome-produto">Papel Chamex</span>
+              </div>
+              <div class="compra">
+                <div class="img-produto cor-2"></div>
+                <span class="nome-produto">SAP</span>
+              </div>
+              <div class="compra">
+                <div class="img-produto cor-3"></div>
+                <span class="nome-produto">Grampeador</span>
+              </div>
+            </div>
+            <button class="seta dir">❯</button>
+          </div>
+          <div class="bolinhas">
+            <span class="bolinha active"></span>
+            <span class="bolinha"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
