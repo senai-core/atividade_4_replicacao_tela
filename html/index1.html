@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAP Replica</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="tela_1.css">
+</head>
+<body>
+    <div class="page">
+        <header class="top-title">
+            <div class="sap-logo">SAP</div>
+            <div class="title-text">
+                Component Customizing /SCMTMS/WDCC_FWD_ORDER, Main Page
+                "$OTR:/SCMTMS/UI_CMN/FORWARDING_ORDER"
+            </div>
+        </header>
+
+        <div class="main-toolbar">
+            <button type="button">Save</button>
+            <button type="button">Cancel</button>
+            <button type="button" class="disabled">Edit</button>
+            <button type="button" class="disabled">Save Draft</button>
+            <button type="button" class="disabled">Load Draft</button>
+            <button type="button" class="disabled">Undo</button>
+            <button type="button" class="disabled">Redo</button>
+            <button type="button">Check</button>
+            <button type="button" class="icon-button"><i class="bi bi-layout-three-columns"></i></button>
+            <button type="button" class="icon-button"><i class="bi bi-columns-gap"></i></button>
+            <button type="button" class="icon-button"><i class="bi bi-grid-3x3-gap"></i></button>
+            <button type="button">Additional Functions</button>
+        </div>
+
+        <div class="workspace">
+            <aside class="sidebar panel">
+                <div class="panel-header sidebar-header">
+                    <h2>Navigation</h2>
+                    <div class="sidebar-tabs">
+                        <span class="tab active">Navigation</span>
+                        <span class="tab">Repositories</span>
+                    </div>
+                </div>
+
+                <div class="mini-toolbar">
+                    <button type="button">New</button>
+                    <button type="button" class="icon-button"><i class="fa-regular fa-trash-can"></i></button>
+                    <button type="button" class="icon-button"><i class="fa-regular fa-copy"></i></button>
+                    <button type="button" class="disabled">Up</button>
+                    <button type="button">Down</button>
+                    <button type="button" class="icon-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
+                <table class="nav-table">
+                    <thead>
+                        <tr>
+                            <th>Page Type</th>
+                            <th>Page Id</th>
+                            <th>Title</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td contenteditable="true">Initial Page</td>
+                            <td contenteditable="true">INIT</td>
+                            <td contenteditable="true">$OTR:/SCMT</td>
+                        </tr>
+                        <tr class="selected">
+                            <td contenteditable="true">Main Page</td>
+                            <td contenteditable="true">MAIN</td>
+                            <td contenteditable="true">$OTR:/SCMT</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Main Page</td>
+                            <td contenteditable="true">MAIN_FAST_EI</td>
+                            <td contenteditable="true">$OTR:/SCMT</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Main Page</td>
+                            <td contenteditable="true">MAIN_FAST_EI</td>
+                            <td contenteditable="true">$OTR:/SCMT</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Dialog Box</td>
+                            <td contenteditable="true">ADDRESS_DE</td>
+                            <td contenteditable="true">$OTR:/SCMT</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Dialog Box</td>
+                            <td contenteditable="true">ACT_LIST</td>
+                            <td contenteditable="true">$OTR:/SCMT</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Dialog Box</td>
+                            <td contenteditable="true">NOTE_HLP</td>
+                            <td contenteditable="true">$OTR:/BOFU/</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Dialog Box</td>
+                            <td contenteditable="true">SEC_FILING_R</td>
+                            <td contenteditable="true">$OTR:/SCMT</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Dialog Box</td>
+                            <td contenteditable="true">SEC_FILING_C</td>
+                            <td contenteditable="true">$OTR:/SCMT</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Dialog Box</td>
+                            <td contenteditable="true">REPACT_NOTI</td>
+                            <td contenteditable="true">$OTR:/SCMT</td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Dialog Box</td>
+                            <td contenteditable="true">REPACT_ATF</td>
+                            <td contenteditable="true">$OTR:/SCMT</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </aside>
+
+            <main class="content panel">
+                <div class="panel-header content-header">
+                    <div class="schema-tabs">
+                        <span class="tab active">Overview Page Schema</span>
+                        <span class="tab">Toolbar Schema</span>
+                        <span class="tab">Wire Schema</span>
+                    </div>
+                    <span class="header-icon"><i class="bi bi-arrows-fullscreen"></i></span>
+                </div>
+
+                <div class="mini-toolbar content-toolbar">
+                    <button type="button">Page Master Area</button>
+                    <button type="button">Section</button>
+                    <button type="button">UIBB</button>
+                    <button type="button" class="icon-button"><i class="fa-regular fa-trash-can"></i></button>
+                    <button type="button">Up</button>
+                    <button type="button">Down</button>
+                </div>
+
+                <div class="grid-wrap">
+                    <table class="main-grid">
+                        <thead>
+                            <tr>
+                                <th>Element</th>
+                                <th>Component</th>
+                                <th>Config ID</th>
+                                <th>Window Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td contenteditable="true">Section: SECTION_1</td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">UIBB: $OTR:/SCMTMS/UI_...</td>
+                                <td contenteditable="true">FPM_FORM_UIBB_GL2</td>
+                                <td contenteditable="true">/SCMTMS/WDCC_FWO_GEN</td>
+                                <td contenteditable="true">FORM_WINDOW</td>
+                            </tr>
+                            <tr class="selected">
+                                <td contenteditable="true">UIBB: $OTR:/SCMTMS/UI_...</td>
+                                <td contenteditable="true">FPM_FORM_UIBB_GL2</td>
+                                <td contenteditable="true">/SCMTMS/WDCC_CMN_ADMINDATA</td>
+                                <td contenteditable="true">FORM_WINDOW</td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">UIBB: $OTR:/SCMTMS/UI_...</td>
+                                <td contenteditable="true">FPM_TABBED_UIBB</td>
+                                <td contenteditable="true">/SCMTMS/WDCC_TRQ_BUPA</td>
+                                <td contenteditable="true">TABBED_WINDOW</td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">UIBB: $OTR:/SCMTMS/UI_...</td>
+                                <td contenteditable="true">FPM_TREE_UIBB</td>
+                                <td contenteditable="true">/SCMTMS/WDCC_DOC_FLOW</td>
+                                <td contenteditable="true">TREE_WINDOW</td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">UIBB: $OTR:/SCMTMS/UI_...</td>
+                                <td contenteditable="true">FPM_TABBED_UIBB</td>
+                                <td contenteditable="true">/SCMTMS/WDCC_TCM_CHARGES_TA</td>
+                                <td contenteditable="true">TABBED_WINDOW</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <section class="details">
+                    <div class="details-title">
+                        Attributes of UIBB: $OTR:/SCMTMS/UI_CMN/ADM_INFO
+                        <button type="button" class="flag-button">Final Flags</button>
+                    </div>
+
+                    <div class="details-body">
+                        <div class="form-column">
+                            <label>Window Name:</label>
+                            <input type="text" value="FORM_WINDOW">
+
+                            <label>Config ID:</label>
+                            <div class="input-with-icon">
+                                <input type="text" value="/SCMTMS/WDCC_CMN_ADMINDATA">
+                                <span><i class="bi bi-box-arrow-up-right"></i></span>
+                            </div>
+
+                            <label>Instance ID:</label>
+                            <input type="text" value="">
+
+                            <label>Column:</label>
+                            <input type="text" value="1">
+
+                            <label>Row Number:</label>
+                            <select class="wide-select">
+                                <option>Visible</option>
+                                <option>Hidden and Excluded from Event Loop</option>
+                                <option>Hidden but Processed in Event Loop (Technical)</option>
+                            </select>
+
+                            <label>Sequence Index:</label>
+                            <input type="text" value="">
+
+                            <label>Default:</label>
+                            <select>
+                                <option>Visible</option>
+                            </select>
+
+                            <label>Hidden Element:</label>
+                            <select>
+                                <option>Visible</option>
+                            </select>
+                        </div>
+
+                        <div class="form-column">
+                            <label>Title:</label>
+                            <input type="text" value="$OTR:/SCMTMS/UI_CMN/ADM_INFO">
+
+                            <label>Image:</label>
+                            <input type="text" value="">
+
+                            <label>Padding:</label>
+                            <select>
+                                <option>Automatic (Default)</option>
+                            </select>
+
+                            <label>Style:</label>
+                            <input type="text" value="">
+
+                            <label>Explanation Text:</label>
+                            <input type="text" value="">
+
+                            <label>Explanation Document:</label>
+                            <input type="text" value="">
+
+                            <label>Default Edit Page:</label>
+                            <div class="input-with-icon">
+                                <input type="text" value="">
+                                <span><i class="bi bi-box-arrow-up-right"></i></span>
+                            </div>
+
+                            <label>Default Details Page:</label>
+                            <input type="text" value="">
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
